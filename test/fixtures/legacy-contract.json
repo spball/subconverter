@@ -1,0 +1,17 @@
+{
+  "sourceCommit": "ecb63a9",
+  "provenance": "Manually transcribed from src/main.cpp, src/handler/interfaces.cpp, src/generator/config/subexport.cpp and README-cn.md; not captured from a running C++ binary.",
+  "buildAttempt": "cmake -S . -B .baseline-build -G Ninja",
+  "buildResult": "Blocked: toml11Config.cmake/toml11-config.cmake unavailable; rapidjson also reported missing.",
+  "ssExample": {
+    "input": "ss://YWVzLTEyOC1nY206dGVzdA==@192.168.100.1:8888#Example1",
+    "clash": { "type": "ss", "name": "Example1", "server": "192.168.100.1", "port": 8888, "cipher": "aes-128-gcm", "password": "test" }
+  },
+  "errors": { "invalidTarget": "Invalid target!", "invalidRequest": "Invalid request!", "forbidden": "Forbidden\n", "unsupportedUpdateType": "Not Implemented\n" },
+  "success": { "readconf": "done\n", "updateconf": "done\n", "refreshrules": "done\n", "flushcache": "done" },
+  "routes": {
+    "/version": ["GET"], "/sub": ["GET", "HEAD"], "/sub2clashr": ["GET"], "/surge2clash": ["GET"],
+    "/getruleset": ["GET"], "/getprofile": ["GET"], "/render": ["GET"], "/readconf": ["GET"], "/updateconf": ["POST"],
+    "/refreshrules": ["GET"], "/flushcache": ["GET"], "/get": ["GET"], "/getlocal": ["GET"]
+  }
+}

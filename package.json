@@ -1,0 +1,30 @@
+{
+  "name": "subconverter-workers",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "license": "GPL-3.0-only",
+  "scripts": {
+    "dev": "wrangler dev",
+    "types": "wrangler types",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "check": "npm run typecheck && npm test && npm run deploy:check",
+    "deploy:check": "wrangler deploy --dry-run --outdir dist",
+    "deploy": "wrangler deploy",
+    "benchmark": "node scripts/benchmark.mjs"
+  },
+  "dependencies": {
+    "smol-toml": "^1.8.0",
+    "yaml": "^2.9.1"
+  },
+  "devDependencies": {
+    "@cloudflare/vitest-plugin": "^1.2.1",
+    "@types/node": "^22.0.0",
+    "esbuild": "^0.28.2",
+    "typescript": "^5.9.3",
+    "vitest": "^4.1.0",
+    "wrangler": "^4.0.0"
+  }
+}

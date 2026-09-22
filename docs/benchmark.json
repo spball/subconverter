@@ -1,0 +1,80 @@
+{
+  "measuredAt": "2026-09-22T12:32:24.342Z",
+  "node": "v25.9.0",
+  "platform": "win32",
+  "note": "Local Node.js CPU-path timings, including YAML provider serialization. Excludes network, templates, Durable Object and Workers overhead; not a guarantee of Cloudflare Free CPU compliance.",
+  "results": [
+    {
+      "nodes": 20,
+      "rules": 100,
+      "target": "clash",
+      "medianMs": 1.86,
+      "p90Ms": 2.41,
+      "outputBytes": 7094
+    },
+    {
+      "nodes": 20,
+      "rules": 100,
+      "target": "singbox",
+      "medianMs": 0.7,
+      "p90Ms": 0.98,
+      "outputBytes": 13557
+    },
+    {
+      "nodes": 20,
+      "rules": 100,
+      "target": "mixed",
+      "medianMs": 0.6,
+      "p90Ms": 0.89,
+      "outputBytes": 1348
+    },
+    {
+      "nodes": 200,
+      "rules": 2000,
+      "target": "clash",
+      "medianMs": 16.11,
+      "p90Ms": 18.42,
+      "outputBytes": 118374
+    },
+    {
+      "nodes": 200,
+      "rules": 2000,
+      "target": "singbox",
+      "medianMs": 8.31,
+      "p90Ms": 9.3,
+      "outputBytes": 230537
+    },
+    {
+      "nodes": 200,
+      "rules": 2000,
+      "target": "mixed",
+      "medianMs": 6.72,
+      "p90Ms": 6.89,
+      "outputBytes": 13720
+    },
+    {
+      "nodes": 1000,
+      "rules": 10000,
+      "target": "clash",
+      "medianMs": 77.5,
+      "p90Ms": 84.38,
+      "outputBytes": 596774
+    },
+    {
+      "nodes": 1000,
+      "rules": 10000,
+      "target": "singbox",
+      "medianMs": 39.26,
+      "p90Ms": 46.98,
+      "outputBytes": 1156937
+    },
+    {
+      "nodes": 1000,
+      "rules": 10000,
+      "target": "mixed",
+      "medianMs": 32.03,
+      "p90Ms": 33.87,
+      "outputBytes": 69188
+    }
+  ]
+}
